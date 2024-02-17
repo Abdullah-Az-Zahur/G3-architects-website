@@ -1,0 +1,193 @@
+/*Work sens*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap') 
+
+*{
+    // <uniquifier>: Use a uniquifier for the class name
+    // <weight>: Use a value from 100 to 900
+
+    .work-sans-<uniquifier> 
+    {
+        font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+}
+
+/*shared styles*/
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    border-radius: 8px;
+    background: #FF900E;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+}
+
+.text-light-gray {
+    color: var(--Dark-03, #727272);
+}
+
+.section-title {
+    color: var(#131313);
+    font-size: 3rem;
+}
+
+/*header-styles*/
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+/* nav styles*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(#424242);
+}
+
+/*Banner Styles*/
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #131313);
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* main style */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* teams styles */
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+}
+
+.teams-content {
+    padding: 70px;
+}
+
+.teams-title {
+    font-size: 2.8rem;
+}
+
+.teams-title .quick-list {
+    font-weight: 500;
+}
+
+.teams-title .of-our {
+    color: var(--Dark-01, #131313);
+    font-weight: 700;
+}
+
+.teams-title .features {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+/* fact section */
+.fact-card-container {
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.fact-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+.fact-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+
+.fact-card-container .card-status {
+    font-size: 2.8rem;
+    color: var(--Dark-02, #424242);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+/*responsive media quary*/
+/*mobile devices*/
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    .teams-container, 
+    .fact-card-container {
+        flex-direction: column;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    nav,
+    .teams-container, 
+    .fact-card-container {
+        flex-direction: column;
+    }
+}
